@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>E-Commerece</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
    <header class="container">
@@ -17,14 +18,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Shoes</a>
-            <a class="nav-link" href="#">BackPack</a>
-            <a class="nav-link">Subscribe</a>
+            <a class="nav-link" href="#shoes">Shoes</a>
+            <a class="nav-link" href="#backpack">BackPack</a>
+            <a class="nav-link" href="#subscribe">Subscribe</a>
           </div>
         </div>
       </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide panda-slide mt-5">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -32,9 +33,12 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-        <div class="row">
+        <div class="row d-flex align-items-center p-5">
           <div class="col-md-7">
-
+           <h1> X-box for your living room</h1>
+           <p>This is the Brand new version of X-box providing a user friendly gaming environment</p>
+           <h3>$600</h3>
+           <button class="btn btn-warning">Buy Now</button>
           </div>
           <div class="col-md-5">
             <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -42,17 +46,23 @@
         </div>
         </div>
         <div class="carousel-item">
-          <div class="row">
+          <div class="row row d-flex align-items-center p-5">
             <div class="col-md-7">
-              
+              <h1> TV for your living room</h1>
+              <p>This is the Brand new version of Plasma TV providing a user the best experience</p>
+              <h3>$1200</h3>
+              <button class="btn btn-warning">Buy Now</button>
             </div>
             <div class="col-md-5"> <img src="images/banner-images/tv.png" class="d-block w-100" alt="..."></div>>
           </div>
         </div>
         <div class="carousel-item">
-        <div class="row">
+        <div class="row row d-flex align-items-center p-5">
           <div class="col-md-7">
-
+            <h1> Headphone for coold dudes</h1>
+            <p>It is mainly a studio headphone preferable to users for recording</p>
+            <h3>$400</h3>
+            <button class="btn btn-warning">Buy Now</button>
           </div>
           <div class="col-md-5">
             <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -71,8 +81,8 @@
     </div>
    </header>
    <main class="container">
-    <section class="container overflow-hidden text-center mt-5">
-      <div class="row gx-5">
+    <section class="container overflow-hidden text-center mt-5 categories">
+      <div class="row g-5">
         <div class="col">
          <div class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">
           <h1 class="text-white">Watch</h1>
@@ -93,48 +103,48 @@
          </div>
       </div>
     </section>
-   <section class="mt-5">
+   <section id="shoes" class="mt-5">
      <h3> Shoes</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card h-100 shadow">
+        <div class="card pandacard h-100 shadow">
           <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Supply 350</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer panda-card-footer">
             <button class="btn btn-warning">Buy Now>></button>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 shadow">
+        <div class="card pandacard h-100 shadow">
           <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Nike 360</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer panda-card-footer">
             <button class="btn btn-warning">Buy Now>></button>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 shadow">
+        <div class="card pandacard h-100 shadow">
           <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Red Airmax</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer panda-card-footer">
             <button class="btn btn-warning">Buy Now>></button>
           </div>
         </div>
       </div>
     </div>
    </section>
-   <section class="mt-5">
+   <section id="backpack" class="mt-5">
     <h3>Backpack</h3>
    <div class="row row-cols-1 row-cols-md-3 g-4">
      <div class="col">
@@ -178,7 +188,18 @@
      </div>
    </div>
   </section>
+  <section id="subscribe" style="height: 300px; " class=" bg-info mt-5 d-flex justify-content-center align-items-center">
+     <div>
+      <h1>Let's Stay In Touch</h1>
+      <h6>Get update on sales, specials and more</h6>
+      <input type="text" placeholder="Enter your E-Mail Address">
+      <button class="btn btn-warning">Submit</button>
+     </div>
+  </section>
    </main>
+   <footer class="text-center mt-5"> 
+    <small> 2023. E-commerce. All right is reserved</small>
+   </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
